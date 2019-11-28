@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Demo</title>
+    <style>
+
+        /* How to calculate filter for color    */
+        /* https://codepen.io/sosuke/pen/Pjoqqp */
+        .filter-green:hover {
+            /*filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);*/
+            /*filter: invert(75%) sepia(61%) saturate(6096%) hue-rotate(157deg) brightness(89%) contrast(101%);*/
+            filter: invert(97%) sepia(52%) saturate(5608%) hue-rotate(359deg) brightness(106%) contrast(101%);
+        }
+
+        .svg-shape {
+            fill: black;
+        }
+
+        .svg-shape:hover {
+            fill: red;
+        }
+
+        .svg-line {
+            fill: none;
+            stroke: black;
+            stroke-width: 2px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .svg-line:hover {
+            filter: invert(19%) sepia(40%) saturate(7428%) hue-rotate(353deg) brightness(95%) contrast(123%);
+        }
+        .svg-line-big {
+            fill: none;
+            stroke: black;
+            stroke-width: 1.7px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .svg-line-big:hover {
+            filter: invert(19%) sepia(40%) saturate(7428%) hue-rotate(353deg) brightness(95%) contrast(123%);
+        }
+    </style>
+</head>
+<body>
+<p>
+    <img width="100px" src="https://es-mycooktouch.group-taurus.com/image/diet/0x/glutenfree" class="filter-green">
+    <img width="100px" src="pax.svg" class="filter-green">
+    <img width="100px" src="wifi-line.svg" class="filter-green">
+    <img width="100px" src="wifi-shape.svg" class="filter-green">
+    <img width="200px" src="wifi-line.svg" class="filter-green">
+    <img width="200px" src="wifi-shape.svg" class="filter-green">
+</p>
+<!--<p><object type="image/svg+xml" data="glutenfree.svg"></object></p>-->
+<p>
+    <svg width="100px" viewBox="0 0 40 40" filter-green">
+        <use href="glutenfree.svg#icons"></use>
+    </svg>
+    <svg width="100px" viewBox="0 0 40 40" class="filter-green">
+        <use href="pax.svg#recipe-pax"></use>
+    </svg>
+    <svg width="100px" viewBox="0 0 40 40" class="svg-line">
+        <use href="wifi-line.svg#icons"></use>
+    </svg>
+    <svg width="100px" viewBox="0 0 40 40" class="svg-shape">
+        <use href="wifi-shape.svg#icons"></use>
+    </svg>
+    <svg width="200px" viewBox="0 0 40 40" class="svg-line-big">
+        <use href="wifi-line.svg#icons"></use>
+    </svg>
+    <svg width="200px" viewBox="0 0 40 40" class="svg-shape">
+        <use href="wifi-shape.svg#icons"></use>
+    </svg>
+</p>
+</body>
+</html>

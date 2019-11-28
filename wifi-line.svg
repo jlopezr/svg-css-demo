@@ -1,0 +1,10 @@
+<svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2.4px;}</style>
+    </defs>
+    <title>wifi</title>
+    <path class="cls-1" d="M12.06,25.25a12.31,12.31,0,0,1,17.26,0"/>
+    <path class="cls-1" d="M7.71,20.79a18,18,0,0,1,26,0"/>
+    <path class="cls-1" d="M4.48,15.77a22.08,22.08,0,0,1,32.35,0"/>
+    <circle fill="black" cx="20.68" cy="30.26" r="2.68"/>
+</svg>
